@@ -12,6 +12,7 @@ import CoreLocation
 let landmarkData: [Landmark] = load("landmarkData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
+    
     let data: Data
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil) else {
         fatalError("Couldn't find \(filename) in main bundle.")
@@ -33,11 +34,11 @@ func load<T: Decodable>(_ filename: String) -> T {
 }
 
 final class ImageStore {
+    
     typealias _ImageDictionary = [String: CGImage]
     fileprivate var images: _ImageDictionary = [:]
     fileprivate static var scale = 2
-    static var shared = ImageStore()
-    
+    static let shared = ImageStore()
     
     static func loadImage(name: String) -> CGImage {
         guard
@@ -59,6 +60,7 @@ final class ImageStore {
         images[name] = ImageStore.loadImage(name: name)
         return images.index(forKey: name)!
     }
+    
     func image(name: String) -> Image {
         let index = _guaranteeImage(name: name)
         return Image(images.values[index], scale: CGFloat(ImageStore.scale), label: Text(verbatim: name))

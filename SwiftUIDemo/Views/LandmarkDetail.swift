@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
     var body: some View {
         VStack {
-            // edgesIgnoringSafeArea(.top)使整个视图从最顶部开始, 否贼会余状态栏高度的空白
+            //edgesIgnoringSafeArea(.top)使整个视图从最顶部开始, 否贼会余状态栏高度的空白
             MapView().frame(height: 300.0).edgesIgnoringSafeArea(.top)
             // offset 设置偏移量 使Image一半贴在地图上
             // .padding则是为了让下面的文字顶上来
@@ -24,8 +24,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail()
     }
 }
