@@ -17,7 +17,6 @@ struct LandmarkDetail: View {
             // .padding则是为了让下面的文字顶上来
             CircleImageView().offset(y: -130).padding(.bottom, -130)
             StackContentView()
-            
             // Spacer()充满下方,将上面的视图顶到头部
             Spacer()
         }

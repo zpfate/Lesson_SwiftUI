@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct StackContentView: View {
+    
     var body: some View {
         // VStack垂直方向的组合视图
         VStack(alignment: HorizontalAlignment.leading) {
