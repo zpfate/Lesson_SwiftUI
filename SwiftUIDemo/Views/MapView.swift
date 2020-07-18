@@ -16,14 +16,14 @@ import MapKit
  */
 struct MapView: UIViewRepresentable {
     typealias UIViewType = MKMapView
-    
+    var landmark: Landmark
     // 返回UIView 代替body属性
     func makeUIView(context: UIViewRepresentableContext<MapView>) -> MKMapView {
         return MKMapView.init(frame: .zero)
     }
     
     func updateUIView(_ uiView: MKMapView, context: UIViewRepresentableContext<MapView>) {
-        let coordinate = CLLocationCoordinate2D(latitude: 34.011286, longitude: -116.166868)
+        let coordinate = CLLocationCoordinate2D(latitude: landmark.locationCoordiante.latitude, longitude: landmark.locationCoordiante.longitude)
         let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         uiView.setRegion(region, animated: true)
@@ -33,6 +33,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(landmark: landmarkData[0])
     }
 }

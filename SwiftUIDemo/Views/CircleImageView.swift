@@ -9,20 +9,19 @@
 import SwiftUI
 
 struct CircleImageView: View {
-    
+    var landmark: Landmark
     var circleBoundView: some View {
         // 4cm圆形边界
         Circle().stroke(Color.white, lineWidth: 4)
     }
     var body: some View {
         // clipShape裁剪形状 shadow:阴影
-        Image("turtlerock").clipShape(Circle()).overlay(circleBoundView).shadow(radius: 10.0)
-        
+        landmark.image.clipShape(Circle()).overlay(circleBoundView).shadow(radius: 10.0)
     }
 }
 
 struct CircleImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CircleImageView()
+        CircleImageView(landmark:landmarkData[0])
     }
 }
