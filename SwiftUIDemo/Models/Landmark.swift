@@ -21,10 +21,14 @@ struct Landmark: Hashable, Codable, Identifiable {
     var locationCoordiante: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
     }
+    
+    var isFavorite: Bool
+    
     enum Category: String, CaseIterable, Codable, Hashable {
         case featured =  "Featured"
         case lakes = "Lakes"
         case rivers = "Rivers"
+        case mountains = "Mountains"
     }
 }
 
