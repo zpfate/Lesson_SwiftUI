@@ -25,7 +25,8 @@
 		5B7BE27F23BA2C570013E10A /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B7BE27223BA2C570013E10A /* chilkoottrail.jpg */; };
 		5B7BE28023BA2C570013E10A /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B7BE27323BA2C570013E10A /* rainbowlake.jpg */; };
 		5B7BE28223BAE70C0013E10A /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BE28123BAE70C0013E10A /* LandmarkRow.swift */; };
-		5BBCFDFE23A8D2DF00850BDA /* LandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCFDFD23A8D2DF00850BDA /* LandMark.swift */; };
+		5BBCFDFE23A8D2DF00850BDA /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCFDFD23A8D2DF00850BDA /* Landmark.swift */; };
+		5BDFCD7724C5F12300B27957 /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5BDFCD7624C5F12300B27957 /* charleyrivers.jpg */; };
 		5BF7C65523A879F0009D5F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7C65423A879F0009D5F8F /* AppDelegate.swift */; };
 		5BF7C65723A879F0009D5F8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7C65623A879F0009D5F8F /* SceneDelegate.swift */; };
 		5BF7C65923A879F0009D5F8F /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7C65823A879F0009D5F8F /* LandmarkDetail.swift */; };
@@ -54,7 +55,8 @@
 		5B7BE27223BA2C570013E10A /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
 		5B7BE27323BA2C570013E10A /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbowlake.jpg; sourceTree = "<group>"; };
 		5B7BE28123BAE70C0013E10A /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
-		5BBCFDFD23A8D2DF00850BDA /* LandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMark.swift; sourceTree = "<group>"; };
+		5BBCFDFD23A8D2DF00850BDA /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		5BDFCD7624C5F12300B27957 /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
 		5BF7C65123A879F0009D5F8F /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF7C65423A879F0009D5F8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF7C65623A879F0009D5F8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				5B7BE26F23BA2C570013E10A /* chincoteague.jpg */,
 				5B7BE27023BA2C570013E10A /* yukon_charleyrivers.jpg */,
 				5B7BE27123BA2C570013E10A /* stmarylake.jpg */,
+				5BDFCD7624C5F12300B27957 /* charleyrivers.jpg */,
 				5B7BE27223BA2C570013E10A /* chilkoottrail.jpg */,
 				5B7BE27323BA2C570013E10A /* rainbowlake.jpg */,
 			);
@@ -114,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5B7BE26423BA2C490013E10A /* Data.swift */,
-				5BBCFDFD23A8D2DF00850BDA /* LandMark.swift */,
+				5BBCFDFD23A8D2DF00850BDA /* Landmark.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				5BF7C66123A879F4009D5F8F /* LaunchScreen.storyboard in Resources */,
 				5B7BE27A23BA2C570013E10A /* umbagog.jpg in Resources */,
 				5B7BE27E23BA2C570013E10A /* stmarylake.jpg in Resources */,
+				5BDFCD7724C5F12300B27957 /* charleyrivers.jpg in Resources */,
 				5B7BE27C23BA2C570013E10A /* chincoteague.jpg in Resources */,
 				5BF7C65E23A879F4009D5F8F /* Preview Assets.xcassets in Resources */,
 				5B7BE27623BA2C570013E10A /* icybay.jpg in Resources */,
@@ -249,7 +253,7 @@
 				5BF7C66923A88201009D5F8F /* StackContentView.swift in Sources */,
 				5B04EBC623A8BC6100986FAC /* CircleImageView.swift in Sources */,
 				5BF7C65923A879F0009D5F8F /* LandmarkDetail.swift in Sources */,
-				5BBCFDFE23A8D2DF00850BDA /* LandMark.swift in Sources */,
+				5BBCFDFE23A8D2DF00850BDA /* Landmark.swift in Sources */,
 				5B7BE26523BA2C490013E10A /* Data.swift in Sources */,
 				5B7BE28223BAE70C0013E10A /* LandmarkRow.swift in Sources */,
 				5B4780F523BAF30800259581 /* LandmarkList.swift in Sources */,
