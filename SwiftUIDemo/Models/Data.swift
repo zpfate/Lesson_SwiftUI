@@ -38,7 +38,7 @@ final class ImageStore {
     typealias _ImageDictionary = [String: CGImage]
     fileprivate var images: _ImageDictionary = [:]
     fileprivate static var scale = 2
-    static let shared = ImageStore()
+    static var shared = ImageStore()
     
     static func loadImage(name: String) -> CGImage {
         guard
