@@ -17,7 +17,8 @@ struct ContentScene: Scene {
                 
                 SettingsView()
                     .tabItem { Label("Settings", systemImage: "gear")
-                    }            }
+                    }       
+            }
         }
     }
 }

@@ -11,10 +11,14 @@ import SwiftUI
 struct MyAppApp: App {
     var body: some Scene {
         
-        #if os(iOS)
-        ContentScene()
-        #elseif os(macOS)
-        AlernativeScene()
-        #endif
+        CaptionedScene()
+        
+//        DemoScene()
+        
+//        #if os(iOS)
+//        ContentScene()
+//        #elseif os(macOS)
+//        AlernativeScene()
+//        #endif
     }
 }
