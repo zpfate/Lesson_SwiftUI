@@ -11,7 +11,9 @@ import SwiftUI
 struct MyAppApp: App {
     var body: some Scene {
         
-        CaptionedScene()
+        SpacingScene()
+        
+//        CaptionedScene()
         
 //        DemoScene()
         

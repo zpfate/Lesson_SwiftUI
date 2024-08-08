@@ -23,6 +23,10 @@
 		4B0303CD2C61CAB60054B123 /* CaptionedScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0303CC2C61CAB60054B123 /* CaptionedScene.swift */; };
 		4B0303CF2C61CBF10054B123 /* IfElseTrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0303CE2C61CBF10054B123 /* IfElseTrain.swift */; };
 		4B0303D12C61CE970054B123 /* EventTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0303D02C61CE970054B123 /* EventTile.swift */; };
+		4B3363DB2C634C610030D483 /* SpacingTrainCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3363DA2C634C610030D483 /* SpacingTrainCars.swift */; };
+		4B3363DF2C636CC20030D483 /* SpacingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3363DE2C636CC20030D483 /* SpacingScene.swift */; };
+		4B3363E12C6371F10030D483 /* PaddingTrainCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3363E02C6371F10030D483 /* PaddingTrainCars.swift */; };
+		4B3363EF2C6497870030D483 /* ViewsBetweenTrainCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3363EE2C6497870030D483 /* ViewsBetweenTrainCars.swift */; };
 		4BAD54482C5B784900C8A19C /* MyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD54472C5B784900C8A19C /* MyApp.swift */; };
 		4BAD544A2C5B784900C8A19C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAD54492C5B784900C8A19C /* ContentView.swift */; };
 		4BAD544C2C5B784A00C8A19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAD544B2C5B784A00C8A19C /* Assets.xcassets */; };
@@ -47,6 +51,10 @@
 		4B0303CC2C61CAB60054B123 /* CaptionedScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionedScene.swift; sourceTree = "<group>"; };
 		4B0303CE2C61CBF10054B123 /* IfElseTrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfElseTrain.swift; sourceTree = "<group>"; };
 		4B0303D02C61CE970054B123 /* EventTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTile.swift; sourceTree = "<group>"; };
+		4B3363DA2C634C610030D483 /* SpacingTrainCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingTrainCars.swift; sourceTree = "<group>"; };
+		4B3363DE2C636CC20030D483 /* SpacingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingScene.swift; sourceTree = "<group>"; };
+		4B3363E02C6371F10030D483 /* PaddingTrainCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTrainCars.swift; sourceTree = "<group>"; };
+		4B3363EE2C6497870030D483 /* ViewsBetweenTrainCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsBetweenTrainCars.swift; sourceTree = "<group>"; };
 		4BAD54442C5B784900C8A19C /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAD54472C5B784900C8A19C /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		4BAD54492C5B784900C8A19C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +103,25 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4B3363DC2C634D800030D483 /* SpacingViews */ = {
+			isa = PBXGroup;
+			children = (
+				4B3363DE2C636CC20030D483 /* SpacingScene.swift */,
+				4B3363DD2C634DAE0030D483 /* Views */,
+			);
+			path = SpacingViews;
+			sourceTree = "<group>";
+		};
+		4B3363DD2C634DAE0030D483 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B3363DA2C634C610030D483 /* SpacingTrainCars.swift */,
+				4B3363E02C6371F10030D483 /* PaddingTrainCars.swift */,
+				4B3363EE2C6497870030D483 /* ViewsBetweenTrainCars.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4BAD543B2C5B784900C8A19C = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +141,7 @@
 		4BAD54462C5B784900C8A19C /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				4B3363DC2C634D800030D483 /* SpacingViews */,
 				4B0303B12C5B86260054B123 /* Models */,
 				4B0303AE2C5B7F850054B123 /* Views */,
 				4BAD54582C5B7B5300C8A19C /* Scenes */,
@@ -222,12 +250,16 @@
 				4B0303AD2C5B7F650054B123 /* AlernativeScene.swift in Sources */,
 				4B0303CD2C61CAB60054B123 /* CaptionedScene.swift in Sources */,
 				4B0303CB2C61C0010054B123 /* CaptionedPhtoto.swift in Sources */,
+				4B3363DF2C636CC20030D483 /* SpacingScene.swift in Sources */,
 				4BAD54572C5B785E00C8A19C /* SettingsView.swift in Sources */,
 				4B0303B52C5B867E0054B123 /* JournalEntry.swift in Sources */,
 				4B0303C12C5CA72F0054B123 /* JournalEntryView.swift in Sources */,
 				4BAD544A2C5B784900C8A19C /* ContentView.swift in Sources */,
 				4B0303B72C5B88DD0054B123 /* JournalEntryItem.swift in Sources */,
 				4B0303C72C5CBCB30054B123 /* DemoScene.swift in Sources */,
+				4B3363E12C6371F10030D483 /* PaddingTrainCars.swift in Sources */,
+				4B3363DB2C634C610030D483 /* SpacingTrainCars.swift in Sources */,
+				4B3363EF2C6497870030D483 /* ViewsBetweenTrainCars.swift in Sources */,
 				4B0303AB2C5B7CC60054B123 /* ContentScene.swift in Sources */,
 				4B0303B02C5B7FAE0054B123 /* AlertnativeContentView.swift in Sources */,
 				4B0303B32C5B86450054B123 /* Journal.swift in Sources */,

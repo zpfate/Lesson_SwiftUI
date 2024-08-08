@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CaptionedScene: Scene {
+    
     var body: some Scene {
         WindowGroup {
             CaptionedPhoto(assetName: "Pink_Peony", captionText: "A cluster of bright pink peonies with yellow stamens.")

@@ -24,6 +24,7 @@ struct EventTile: View {
         HStack(alignment: .firstTextBaseline) {
             Image(systemName: event.symbol)
                 .font(.title)
+            
             VStack(alignment: .leading) {
                 Text(event.title)
                     .font(.title)
