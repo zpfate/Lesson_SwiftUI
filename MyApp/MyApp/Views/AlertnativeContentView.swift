@@ -13,6 +13,7 @@ struct AlertnativeContentView: View {
     @State private var selectedEntry: JournalEntry? = nil
     
     var body: some View {
+        
         NavigationSplitView {
             List(journal.entries, selection: $selectedEntry) { entry in
                 NavigationLink(value: entry) {
@@ -33,7 +34,7 @@ struct AlertnativeContentView: View {
                 }
             }
         } detail: {
-            DetailView(selectedEntry: $selectedEntry)
+            AlertnativeDetailView(selectedEntry: $selectedEntry)
         }
     }
 }

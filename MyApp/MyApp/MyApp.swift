@@ -8,10 +8,14 @@
 import SwiftUI
 
 @main
-struct MyAppApp: App {
+struct MyApp: App {
+    
+
     var body: some Scene {
         
-        SpacingScene()
+        RecipeScene()
+        
+//        SpacingScene()
         
 //        CaptionedScene()
         

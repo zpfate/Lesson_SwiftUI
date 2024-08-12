@@ -14,6 +14,7 @@ struct DefaultPadding: View {
             TrainCar(.rear)
             TrainCar(.middle)
                 .padding()
+                .background(Color("customBlue"))
                 .border(.teal)
             TrainCar(.front)
         }
@@ -63,6 +64,7 @@ struct PaddingTheContainer: View {
             TrainCar(.front)
         }
         .padding()
+        .background(Color("customRed"))
         .border(.teal)
         TrainTrack()
     }

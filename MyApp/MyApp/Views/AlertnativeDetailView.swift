@@ -1,5 +1,5 @@
 //
-//  DetailView.swift
+//  AlertnativeDetailView.swift
 //  MyApp
 //
 //  Created by fate on 2024/8/2.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailView: View {
+struct AlertnativeDetailView: View {
     
     @Binding var selectedEntry: JournalEntry?
     
