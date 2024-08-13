@@ -31,6 +31,7 @@ struct DetailView: View {
     
     var body: some View {
         
+        /// ZStack是层叠组合 (Z轴方向)
         ZStack {
             if recipeBox.contains(recipeId)  {
                 RecipeDetailView(recipe: recipe)

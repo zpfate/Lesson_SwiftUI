@@ -13,12 +13,12 @@ struct RecipeScene: Scene {
     @State private var selectedSidebarItem: SidebarItem? = SidebarItem.all
     @State private var selectedRecipeId: Recipe.ID?
     
-    
     var body: some Scene {
         
         WindowGroup {
+            
 //            NavigationSplitView {
-//                ContentListView(selection: $selectedRecipeId, selectedSidebarItem: selectedSidebarItem ?? SidebarItem.all)
+//                ContentListView(seletion: $selectedRecipeId, selectedSidebarItem: selectedSidebarItem ?? SidebarItem.all)
 //            } detail: {
 //                RecipeDetailView()
 //            }.environmentObject(recipeBox)

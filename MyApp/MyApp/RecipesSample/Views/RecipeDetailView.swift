@@ -53,7 +53,6 @@ struct RecipeDetailView: View {
     @Binding var recipe: Recipe
     
     var body: some View {
-        
         VStack {
             TopView(recipe: $recipe)
             ScrollView {
