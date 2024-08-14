@@ -9,9 +9,6 @@ import SwiftUI
 
 final class Person: ObservableObject {
     @Published var name = "Alex Taylor"
-    
-    
-    
 }
 
 struct EnvironmentObjectView: View {

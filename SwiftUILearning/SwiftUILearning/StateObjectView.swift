@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// @StateObject用于在视图中创建一个持久化的可观察对象，并在视图的生命周期内保持持久性。它类似于@ObservedObject，但在对象生命周期中只会创建一次。
 
 class DataModel: ObservableObject {
     @Published var data: [String] = []
@@ -17,10 +18,7 @@ class DataModel: ObservableObject {
 
 struct StateObjectView: View {
     
-    // @StateObject用于在视图中创建一个持久化的可观察对象，并在视图的生命周期内保持持久性。它类似于@ObservedObject，但在对象生命周期中只会创建一次。
-    
     @StateObject var dataModel = DataModel()
-    
     
     private func add() {
         dataModel.count += 1

@@ -28,7 +28,6 @@ struct SwiftUILearningApp: App {
                     NavigationLink("@Environment") {
                         EnvironmentView()
                     }
-                    
                     NavigationLink("@ObservedObject") {
                         ObservedObjectView()
                     }
@@ -38,20 +37,8 @@ struct SwiftUILearningApp: App {
                     NavigationLink("@EnvironmentObject") {
                         EnvironmentObjectView()
                     }
-                    
                 }
             }
-            
-            
-//            NavigationSplitView {
-//                
-//                Text("SSSSS")
-//                
-//            } detail: {
-//                Text("DDDDD")
-//            }
-
-            
         }
     }
 }

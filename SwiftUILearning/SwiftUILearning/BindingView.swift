@@ -9,16 +9,16 @@ import SwiftUI
 
 struct BindingView: View {
     
-    @State private var isChildViewVisible = false
+    @State private var isVisible = false
     
     var body: some View {
         
         VStack (alignment: .center) {
-            Toggle(isOn: $isChildViewVisible) {
+            Toggle(isOn: $isVisible) {
                 Text("Show Child View").padding()
             }.padding()
-            if isChildViewVisible {
-                BindingChildView(isVisible: $isChildViewVisible)
+            if isVisible {
+                BindingChildView(isVisible: $isVisible)
             }
         }
     }
