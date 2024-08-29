@@ -15,26 +15,30 @@ struct BindingView: View {
         
         VStack (alignment: .center) {
             Toggle(isOn: $isVisible) {
-                Text("Show Child View").padding()
+                Text("Show child view")
             }.padding()
+                        
             if isVisible {
                 BindingChildView(isVisible: $isVisible)
+            } else {
+                Rectangle().frame(height: 60).foregroundColor(Color.clear)
             }
         }
     }
 }
-
 
 struct BindingChildView: View {
     
     @Binding var isVisible: Bool
     
     var body: some View {
+        
         Text("Child View")
+        
         Button {
             isVisible = false
         } label: {
-            Text("Hide")
+            Image(systemName: "eye.slash").resizable().frame(width: 40, height: 30)
         }
     }
 }

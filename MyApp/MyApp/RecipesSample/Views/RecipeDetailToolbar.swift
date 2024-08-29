@@ -24,14 +24,16 @@ struct RecipeDetailToolbar: ToolbarContent {
     var body: some ToolbarContent {
         
         ToolbarItem(placement: toolbarItemPlacement) {
+            
             Toggle(isOn: $recipe.isFavorite) {
                 Image(systemName: "heart")
                     .symbolVariant(recipe.isFavorite ? .fill : .none)
             }
             .toggleStyle(.button)
         }
-        
+
         ToolbarItem(placement: toolbarItemPlacement) {
+            
             Button(role: .destructive) {
                 showDeleteConfirmation = true
             } label: {

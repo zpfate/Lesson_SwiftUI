@@ -26,8 +26,9 @@ struct ObservedObjectView: View {
     
     var body: some View {
         
-        TextField("Enter your name", text: $user.name).border(Color.gray, width: 1).padding()
-        Text("Hello, \(user.name)")
+        TextField("Enter your name", text: $user.name).frame(height: 50).border(Color.gray, width: 1).padding()
+        Text("Current Text is:").padding()
+        Text("\(user.name)").font(.largeTitle).foregroundStyle(Color.red).padding()
     }
 }
 

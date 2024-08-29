@@ -16,11 +16,23 @@ struct StateView: View {
     
     var body: some View {
         
-        Button(action: {
-            count += 1
-        }, label: {
-            Text("Button count: \(count)")
-        })
+        HStack (alignment: .center, spacing: 40) {
+            Button(action: {
+                count += 1
+            }, label: {
+                Image(systemName: "plus.square.fill").resizable().frame(width: 40, height: 40)
+            })
+            
+            Button(action: {
+                count -= 1
+            }, label: {
+                Image(systemName: "minus.square.fill").resizable().frame(width: 40, height: 40)
+            })
+        }
+        
+        Text("Current count: ").padding().font(.largeTitle)
+        
+        Text("\(count)").font(Font.system(size: 60)).foregroundStyle(Color.blue)
     }
 }
 

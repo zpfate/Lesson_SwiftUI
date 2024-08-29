@@ -15,6 +15,7 @@ struct RecipeEditor: View {
         NavigationStack {
             RecipeEditorForm(config: $config)
                 .toolbar {
+                    
                     ToolbarItem(placement: .principal) {
                         Text(editorTitle)
                     }
@@ -41,7 +42,6 @@ struct RecipeEditor: View {
         }
     }
     
-    
     private var editorTitle: String {
         config.recipe.isNew ? "Add Recipe" : "Edit Recipe"
     }
@@ -56,12 +56,11 @@ struct RecipeEditor: View {
     
     private var saveButtonPlacement: ToolbarItemPlacement {
         #if os(macOS)
-        .confirmation
+        .confirmationAction
         #else
         .navigationBarTrailing
         #endif
     }
-    
 }
 
 //#Preview {

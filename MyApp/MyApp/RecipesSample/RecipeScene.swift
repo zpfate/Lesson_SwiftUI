@@ -21,7 +21,7 @@ struct RecipeScene: Scene {
 //                ContentListView(seletion: $selectedRecipeId, selectedSidebarItem: selectedSidebarItem ?? SidebarItem.all)
 //            } detail: {
 //                RecipeDetailView()
-//            }.environmentObject(recipeBox)
+//            }.environmentMOdeObject(recipeBox)
 
             NavigationSplitView {
                 SideBarView(selection: $selectedSidebarItem, recipeBox: recipeBox)
